@@ -3,6 +3,48 @@
 <html>
   <head>
     <title>MZ MEME - 2022 MEME</title>
+    <style>
+      h3 {
+        text-align: center;
+        margin-top: 30px;
+      }
+      p {
+        text-align: right;
+        font-size: 10px;
+      }
+      div {
+        width: 400px;
+        margin: auto;
+        text-align: center;
+      }
+      input[type=radio] {
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: -9999px;
+      }
+      input[type=radio] + label {
+        margin: 0;
+        padding: .75em 1.5em;
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        border: solid 1px #DDD;
+        background-color: #FFF;
+        line-height: 140%;
+        text-align: center;
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+        transition: border-color .15s ease-out, color .25s ease-out, background-color .15s ease-out, box-shadow .15s ease-out;
+        cursor: pointer;
+        width: 400px;
+      }
+      input[type=radio]:checked + label {
+        background-color: black;
+        color: #FFF;
+        border-color: black;
+        z-index: 1;
+      }
+    </style>
   </head>
   <script type="text/javascript">
     function nextTap(){		
@@ -161,12 +203,17 @@
     <form id="frm" name="frm" enctype="multipart/form-data">
       <div>
         <div id="step1" name="step1">
-          1. 문제<br>
-          사진<br>
-          <input type="radio" name="q1" value="1">보기1<br>
-          <input type="radio" name="q1" value="2">보기2<br>
-          <input type="radio" name="q1" value="3">보기3<br>
-          <input type="radio" name="q1" value="4">보기4<br>
+          <h3>1. 다음 인물과 관계없는 것을 고르시오.</h3>
+          <img src="q1.jpeg" width="400"/><br>
+          <p>출처: 환승연애2</p>
+          <input type="radio" id="a1" name="q1" value="1">
+          <label for="a1">홍합</label><br>
+          <input type="radio" id="a2" name="q1" value="2">
+          <label for="a2">양파쿵야</label><br>
+          <input type="radio" id="a3" name="q1" value="3">
+          <label for="a3">밤창석</label><br>
+          <input type="radio" id="a4" name="q1" value="4">
+          <label for="a4">메기</label><br>
         </div>
 		
         <div id="step2" name="step2" style="display: none;">
