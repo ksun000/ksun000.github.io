@@ -5,7 +5,7 @@
     <title>MZ MEME - 2022 MEME</title>
   </head>
   <script type="text/javascript">
-    function nextTap(div){		
+    function nextTap(){		
       if(document.getElementById("step1").style.display != 'none') {
  	document.getElementById("step1").style.display = 'none';
 	document.getElementById("step2").style.display = 'block';
@@ -108,7 +108,53 @@
         if(answer.checked)  {
           a10 = (answer.value);
         }
-      }) 
+      })
+
+      var count = 0;
+      if(a1 == 1) {
+        count++;
+      }
+      if(a2 == 1) {
+        count++;
+      }
+      if(a3 == 1) {
+        count++;
+      }
+      if(a4 == 1) {
+        count++;
+      }
+      if(a5 == 1) {
+        count++;
+      }
+      if(a6 == 1) {
+        count++;
+      }
+      if(a7 == 1) {
+        count++;
+      }
+      if(a8 == 1) {
+        count++;
+      }
+      if(a9 == 1) {
+        count++;
+      }
+      if(a10 == 1) {
+        count++;
+      }
+
+      var link;
+      if(count == 10) {
+        link = 'result10.html';	
+      }else if(count >= 7 && count <= 9) {
+        link = 'result9_7.html';	
+      }else if(count >= 4 && count <= 6) {
+        link = 'result6_4.html';	
+      }else if(count >= 1 && count <= 3) {
+        link = 'result3_1.html';	
+      }else if(count == 0) {
+        link = 'result0.html';	
+      }
+      location.replace(link);
     }
   </script>
   <body>
@@ -205,7 +251,7 @@
         </div>
       </div>
       <div>
-          <button type="button" id="nextTab" onclick="nextTap('next');">다음</button>
+          <button type="button" id="nextTab" onclick="nextTap();">다음</button>
       </div>
     </form>
   </body>
