@@ -288,39 +288,39 @@
       if(a3 == 1) {
         count++;
       }
-      if(a4 == 1) {
+      if(a4 == 4) {
         count++;
       }
-      if(a5 == 1) {
+      if(a5 == 3) {
         count++;
       }
-      if(a6 == 1) {
+      if(a6 == 2) {
         count++;
       }
-      if(a7 == 1) {
+      if(a7 == 2) {
         count++;
       }
       if(a8 == 1) {
         count++;
       }
-      if(a9 == 1) {
+      if(a9 == 3) {
         count++;
       }
-      if(a10 == 1) {
+      if(a10 == 4) {
         count++;
       }
 
       var link;
       if(count == 10) {
-        link = 'result10.html';	
+        link = './result/result10.html';	
       }else if(count >= 7 && count <= 9) {
-        link = 'result9_7.html';	
+        link = './result/result9_7.html';	
       }else if(count >= 4 && count <= 6) {
-        link = 'result6_4.html';	
+        link = './result/result6_4.html';	
       }else if(count >= 1 && count <= 3) {
-        link = 'result3_1.html';	
+        link = './result/result3_1.html';	
       }else if(count == 0) {
-        link = 'result0.html';	
+        link = './result/result0.html';	
       }
       location.replace(link);
     }
@@ -330,7 +330,7 @@
       <div>
         <div id="step1" name="step1">
           <h3>Q1. 아래 인물과 관련없는 것을 고르시오.</h3>
-          <img src="q1.jpeg" width="370"/><br>
+          <img src="./q/q1.jpeg" width="370"/><br>
           <p>출처: 환승연애2</p>
           <input type="radio" id="q1a1" name="q1" value="1">
           <label for="q1a1">홍합</label><br>
@@ -344,7 +344,7 @@
 		
         <div id="step2" name="step2" style="display: none;">
           <h3>Q2. 지금 무슨 노래 듣고 계세요?</h3>
-          <img src="q2.jpg" width="370"/><br>
+          <img src="./q/q2.jpg" width="370"/><br>
           <p>출처: 핑구</p>
           <input type="radio" id="q2a1" name="q2" value="1">
           <label for="q2a1">인생은 회전목마요</label><br>
@@ -358,7 +358,7 @@
 			
         <div id="step3" name="step3" style="display: none;">
           <h3>Q3. 아래 춤의 이름으로 올바른 것을<br>고르시오.</h3>
-          <img src="q3.jpeg" width="370"/><br>
+          <img src="./q/q3.jpeg" width="370"/><br>
           <p>출처: SNL 코리아</p>
           <input type="radio" id="q3a1" name="q3" value="1">
           <label for="q3a1">코카인</label><br>
@@ -373,7 +373,7 @@
         <div id="step4" name="step4" style="display: none;">
           <h3 style="margin-bottom: 0;">Q4. 아래 인물과 관련없는 것을 고르시오.</h3>
           <h4>(과몰입 주의)</h4>
-          <img src="q4.jpeg" width="300"/><br>
+          <img src="./q/q4.jpeg" width="300"/><br>
           <p>출처: 나무위키</p>
           <input type="radio" id="q4a1" name="q4" value="1">
           <label for="q4a1">호스트바</label><br>
@@ -387,7 +387,7 @@
 			
         <div id="step5" name="step5" style="display: none;">
           <h3>Q5. 아래 인물과 관련없는 것을 고르시오.</h3>
-          <img src="q5.jpeg" width="370"/><br>
+          <img src="./q/q5.jpeg" width="370"/><br>
           <p>출처: SNL 코리아</p>
           <input type="radio" id="q5a1" name="q5" value="1">
           <label for="q5a1">맑은 눈의 광인</label><br>
@@ -401,7 +401,7 @@
 			
         <div id="step6" name="step6" style="display: none;">
           <h3>Q6. 아래 작품과 관련없는 것을 고르시오.</h3>
-          <img src="q6.jpg" width="370"/><br>
+          <img src="./q/q6.jpg" width="370"/><br>
           <p>출처: 이상한 변호사 우영우</p>
           <input type="radio" id="q6a1" name="q6" value="1">
           <label for="q6a1">우투더영투더우</label><br>
@@ -414,39 +414,59 @@
         </div>
 			
         <div id="step7" name="step7" style="display: none;">
-          7. 문제<br>
-          사진<br>
-          <input type="radio" name="q7" value="1">보기1<br>
-          <input type="radio" name="q7" value="2">보기2<br>
-          <input type="radio" name="q7" value="3">보기3<br>
-          <input type="radio" name="q7" value="4">보기4<br>	
+          <h3>Q7. 중요한 것은 무엇인가요?</h3>
+          <img src="./q/q7.jpg" width="300"/><br>
+          <p>출처: 카타르 월드컵</p>
+          <input type="radio" id="q7a1" name="q7" value="1">
+          <label for="q7a1">꺾이지 않는 믿음</label><br>
+          <input type="radio" id="q7a2" name="q7" value="2">
+          <label for="q7a2">꺾이지 않는 마음</label><br>
+          <input type="radio" id="q7a3" name="q7" value="3">
+          <label for="q7a3">꺾이지 않는 관절</label><br>
+          <input type="radio" id="q7a4" name="q7" value="4">
+          <label for="q7a4">꺾이지 않는 허리</label><br>
         </div>
 			
         <div id="step8" name="step8" style="display: none;">
-          8. 문제<br>
-          사진<br>
-          <input type="radio" name="q8" value="1">보기1<br>
-          <input type="radio" name="q8" value="2">보기2<br>
-          <input type="radio" name="q8" value="3">보기3<br>
-          <input type="radio" name="q8" value="4">보기4<br>	
+          <h3>Q8. 아래 인물이 춤 춘 노래의 가사와<br>관련없는 것을 고르시오.</h3>
+          <img src="./q/q8.jpg" width="300"/><br>
+          <p>출처: 유튜브 왕간다</p>
+          <input type="radio" id="q8a1" name="q8" value="1">
+          <label for="q8a1">밥</label><br>
+          <input type="radio" id="q8a2" name="q8" value="2">
+          <label for="q8a2">집</label><br>
+          <input type="radio" id="q8a3" name="q8" value="3">
+          <label for="q8a3">돈</label><br>
+          <input type="radio" id="q8a4" name="q8" value="4">
+          <label for="q8a4">차</label><br>	
         </div>
 			
         <div id="step9" name="step9" style="display: none;">
-          9. 문제<br>
-          사진<br>
-          <input type="radio" name="q9" value="1">보기1<br>
-          <input type="radio" name="q9" value="2">보기2<br>
-          <input type="radio" name="q9" value="3">보기3<br>
-          <input type="radio" name="q9" value="4">보기4<br>	
+          <h3>Q9. 인싸 포즈로 올바르지 않은 것을<br>고르시오.</h3>
+          <img src="./q/q9.jpeg" width="350"/><br>
+          <p>출처: 잔망루피</p>
+          <input type="radio" id="q9a1" name="q9" value="1">
+          <label for="q9a1">훈이피스</label><br>
+          <input type="radio" id="q9a2" name="q9" value="2">
+          <label for="q9a2">갸루피스</label><br>
+          <input type="radio" id="q9a3" name="q9" value="3">
+          <label for="q9a3">홈오피스</label><br>
+          <input type="radio" id="q9a4" name="q9" value="4">
+          <label for="q9a4">체리피스</label><br>	
         </div>
 			
         <div id="step10" name="step10" style="display: none;">
-          10. 문제<br>
-          사진<br>
-          <input type="radio" name="q10" value="1">보기1<br>
-          <input type="radio" name="q10" value="2">보기2<br>
-          <input type="radio" name="q10" value="3">보기3<br>
-          <input type="radio" name="q10" value="4">보기4<br>	
+          <h3>Q10. 밥알이 몇 개인가요?</h3>
+          <img src="./q/q10.png" width="370"/><br>
+          <p>출처: 재벌집 막내아들</p>
+          <input type="radio" id="q10a1" name="q10" value="1">
+          <label for="q10a1">290개</label><br>
+          <input type="radio" id="q10a2" name="q10" value="2">
+          <label for="q10a2">300개</label><br>
+          <input type="radio" id="q10a3" name="q10" value="3">
+          <label for="q10a3">310개</label><br>
+          <input type="radio" id="q10a4" name="q10" value="4">
+          <label for="q10a4">320개</label><br>	
         </div>
       </div>
       <div>
